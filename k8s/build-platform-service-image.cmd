@@ -1,0 +1,1 @@
+ docker build -t platformservice -f .\PlatformService\Dockerfile .

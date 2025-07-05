@@ -1,0 +1,32 @@
+### Get all platforms
+GET http://{{host-cs}}/api/c/platforms
+Accept: application/json
+
+### Get platform by id
+GET http://{{host-cs}}/api/c/platforms/1 
+Accept: application/json
+
+### Create platform
+POST http://{{host-cs}}/api/c/platforms 
+Content-Type: application/json 
+Accept: application/json
+
+{
+  "name": "Test Platform"
+}
+
+### Get all commands for platform
+GET http://{{host-cs}}/api/c/platforms/1/commands
+Accept: application/json
+
+### Create command for platform
+POST http://{{host-cs}}/api/c/platforms/1/commands 
+Content-Type: application/json 
+Accept: application/json
+
+{
+  "howTo": "Run test command",
+  "commandLine": "echo Hello"
+}
+
+###

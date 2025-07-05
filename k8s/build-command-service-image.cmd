@@ -1,0 +1,1 @@
+ docker build -t commandservice -f .\CommandService\Dockerfile .

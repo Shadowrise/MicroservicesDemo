@@ -1,0 +1,28 @@
+# @name GetAllPlatforms
+GET http://{{host-ps}}/api/platforms
+Accept: application/json
+
+###
+
+# @name GetPlatformById
+GET http://{{host-ps}}/api/platforms/1
+Accept: application/json
+
+###
+
+# @name CreatePlatform
+POST http://{{host-ps}}/api/platforms
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Test Platform",
+  "publisher": "Test Publisher",
+  "cost": "Free"
+}
+
+###
+
+# @name GetProto
+GET http://{{host-ps}}/protos/platforms.proto
+Accept: application/text
